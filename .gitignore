@@ -1,2 +1,4 @@
 express_server/node_modules
 express_server/package-lock.json
+react_client/node_modules
+react_client/package-lock.json

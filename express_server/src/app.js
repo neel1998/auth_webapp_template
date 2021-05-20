@@ -17,4 +17,4 @@ app.use(authRoutes)
 //private routes which will require authentication
 app.use(middleware, appRoutes)
 
-app.listen(3000)
+app.listen(5000)
