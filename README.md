@@ -19,16 +19,16 @@ This repository contains the template code for authentication web application wi
   in both of the fodlders to download the dependecies.
 
 - To run the backend server, go to `./express_server/` and execute
-```
-> node src/app.js
-```
-This will start the server on the `http://localhost:5000`
+  ```
+  > node src/app.js
+  ```
+  This will start the server on the `http://localhost:5000`
 
 - To run the frontend client, go to `./react_client/` and execute
-```
-> npm start
-```
-This will start the client on the `http://localhost:3000`
+  ```
+  > npm start
+  ```
+  This will start the client on the `http://localhost:3000`
 
 <hr/>
 
