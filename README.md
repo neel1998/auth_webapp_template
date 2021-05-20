@@ -1,4 +1,4 @@
-# Template Authentication Webapp
+# Template for Authentication Webapp
 
 This repository contains the template code for authentication web application with backend server, database and front end client. Following are the main components:
 
