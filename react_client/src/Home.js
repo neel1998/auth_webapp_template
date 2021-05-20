@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import {baseServerURL} from './constants'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button';
-import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default class Home extends Component {
 

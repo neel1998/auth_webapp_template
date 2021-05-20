@@ -2,11 +2,10 @@ const sqlite3 = require('sqlite3').verbose()
 const path = require('path')
 const sha256 = require('sha256')
 
-var mainPath = path.resolve('/home/neel/auth_webapp_template/express_server/src/Database')
 
 class AuthDatabase {
   constructor() {
-    var authDatabase = new sqlite3.Database(mainPath + '/authDatabase.db', sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE, (err) => {
+    var authDatabase = new sqlite3.Database(__dirname + '/authDatabase.db', sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE, (err) => {
     	if (err) {
     		console.log(err.message);
     	} else {
@@ -17,7 +16,7 @@ class AuthDatabase {
 
   login(body) {
     return new Promise( (res,rej) => {
-      var database = new sqlite3.Database(mainPath + '/authDatabase.db', (err) => {
+      var database = new sqlite3.Database(__dirname + '/authDatabase.db', (err) => {
       	if (err) {
           rej(err.message)
       	} else {
@@ -43,7 +42,7 @@ class AuthDatabase {
 
   register(body) {
     return new Promise((res, rej) => {
-      var database = new sqlite3.Database(mainPath + '/authDatabase.db', (err) => {
+      var database = new sqlite3.Database(__dirname + '/authDatabase.db', (err) => {
         if (err) {
       		rej(1,err.message);
       	} else {
